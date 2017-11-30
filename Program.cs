@@ -34,7 +34,7 @@ namespace join_test
 
 
 
-            Console.WriteLine("linq join");
+            Console.WriteLine("A) linq join");
 
             var specialOrders = nominatedUserIds
                 .Join(creditCards,
@@ -49,7 +49,7 @@ namespace join_test
 
 
 
-            Console.WriteLine("the same in SQL syntax");
+            Console.WriteLine("B) the same in SQL syntax");
 
             var specialOrders2 =
                 from userId in nominatedUserIds
@@ -61,7 +61,7 @@ namespace join_test
 
 
 
-            Console.WriteLine("the same starting from orders");
+            Console.WriteLine("C) the same starting from orders");
 
             var specialOrders3 =
                 from order in orders
@@ -73,7 +73,7 @@ namespace join_test
 
 
 
-            Console.WriteLine("foreach");
+            Console.WriteLine("D) foreach");
 
             foreach (var userId in nominatedUserIds)
             {
