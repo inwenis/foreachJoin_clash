@@ -45,6 +45,7 @@ namespace join_test
                     creditCard => creditCard.OrderId,
                     order => order.Id,
                     (_, order) => order);
+
             DoSomethingWithOrders(specialOrders);
 
 
